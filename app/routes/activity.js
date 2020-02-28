@@ -1,10 +1,10 @@
 const express = require('express')
 const router = express.Router()
 
-const ExerciseCntrl = require('../controllers/exerciseCntrl');
+const ActivityCntrl = require('../controllers/activityCntrl');
 
 
-// router.get('/', activityCnrl);
+router.post('/', ActivityCntrl.addOne);
 
 
 module.exports = router;

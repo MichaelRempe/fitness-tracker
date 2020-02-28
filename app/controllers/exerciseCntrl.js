@@ -7,7 +7,6 @@ const ExerciseCntrl = {
   // listing of all exercises is needed
   getAll(req, res){
     Exercise.find({}).then(data => {
-      console.log(data);
       res.json(data)
     });
   }
