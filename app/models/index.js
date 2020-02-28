@@ -1,3 +1,5 @@
 module.exports = {
-  Exercise: require('./exerciseModel')
+  Workout: require("./workoutModel"),
+  Exercise: require('./exerciseModel'),
+  Activity: require('./activitiesModel')
 };
