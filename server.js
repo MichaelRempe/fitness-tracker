@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
   // locate static directory
-app.use(express.static("public"));
+app.use(express.static("./app/public"));
 
 //*******ROUTES --> Router ***********************************************************************************//
 app.use('/api/activity', require('./app/routes/exercise'))

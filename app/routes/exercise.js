@@ -5,7 +5,7 @@ const ExerciseCntrl = require('../controllers/exerciseCntrl');
 
 // GET  "/""
 // Calls controller which will return all activities for a specific workout
-router.get("/", ExerciseCntrl.getAll);
+router.get("/api/exercise", ExerciseCntrl.getAll);
 
 
-module.exports = router
+module.exports = router;
