@@ -65,7 +65,8 @@ $(document).ready(function(){
   // event selector.
   $("#workouts-list").on("click", ".workout-item", function(e){
     e.preventDefault();
-    console.log("item clicked")
+    console.log("item clicked");
+    console.log($(this));
     $("#workouts-list li").removeClass("selected");
     $(this).addClass("selected");
     const idx = $(this).attr("data-workout-idx");

@@ -2,16 +2,27 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const ActivitySchema = new Schema({
-  type: {
+  duration: {
     type: String,
     trim: true,
-    required: "Enter an exercise type"
   },
-  name: {
+  weight: {
     type: String,
     trim: true,
-    required: "Enter an exercise name"
-  }
+  },
+  reps:{
+    type: String,
+    trim: true,
+  },
+  sets:{
+    type: String,
+    trim: true,
+  },
+  distance:{
+    type: String,
+    trim: true,
+  },
+
 });
 
 const Activity = mongoose.model("Activity", ActivitySchema);

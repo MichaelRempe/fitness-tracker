@@ -10,6 +10,12 @@ const WorkoutCntrl = {
       console.log(data);
       res.json(data)
     });
+  },
+  //post workout to DB
+  addOne({ body }, res){
+    console.log(body);
+    Workout.create(body).then((workout)=>{(res.json(workout._id))})
+    // Workout.create(body).then((workout)=>{(res.json(workout))})
   }
 }
 
