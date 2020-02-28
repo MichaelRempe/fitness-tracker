@@ -3,9 +3,8 @@ const router = express.Router()
 
 const ExerciseCntrl = require('../controllers/exerciseCntrl');
 
-// GET  "/""
-// Calls controller which will return all activities for a specific workout
-router.get("/api/exercise", ExerciseCntrl.getAll);
+router.get("/", ExerciseCntrl.getAll);
+router.post("/", ExerciseCntrl.addOne);
 
 
 module.exports = router;
